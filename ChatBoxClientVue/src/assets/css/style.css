@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.grahaksewa-chat-wrapper {
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+
+.grahaksewa-noscroll {
+  overflow: hidden;
+}
+.grahaksewa-chat-wrapper .chat-wrapper {
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.grahaksewa-chat-wrapper .form-control {
+  height: auto;
+  padding: 12px;
+  font-size: 16px;
+}
+.grahaksewa-chat-wrapper .form-group {
+  margin-bottom: 25px;
+}
+.grahaksewa-chat-wrapper .btn {
+  font-size: 24px;
+}
+.grahaksewa-chat-wrapper .form-check-label {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .grahaksewa-noscroll {
+    overflow: auto;
+  }
+  .grahaksewa-chat-wrapper .chat-wrapper {
+    top: unset;
+    left: unset;
+    right: 30px;
+    width: 300px;
+    bottom: 85px;
+    height: auto;
+  }
+
+  .grahaksewa-chat-wrapper .form-control {
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: none;
+  }
+  .grahaksewa-chat-wrapper .btn {
+    font-size: 16px;
+  }
+  .grahaksewa-chat-wrapper .form-check-label {
+    font-size: 14px;
+  }
+}
+.grahaksewa-chat-wrapper .chat-wrapper .card {
+  border: none;
+  border-radius: 0;
+  /*border : 1px solid rgba(255, 255, 255, 0.1);*/
+}
+.grahaksewa-chat-wrapper .chat-wrapper .card-header {
+  font-weight: bold;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .card-header {
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .card-body {
+  padding: 0;
+}
+.grahaksewa-chat-wrapper .reg-body {
+  padding: 25px;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .dialog {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .dialog em {
+  font-size: 14px;
+}
+.grahaksewa-chat-wrapper .reg-body input {
+  border-radius: 0;
+}
+.grahaksewa-chat-wrapper .reg-body textarea {
+  border-radius: 0;
+  min-height: 100px;
+  max-height: 150px;
+}
+.grahaksewa-chat-wrapper .btn.btn-transparent {
+  background-color: transparent !important;
+  border: none !important;
+}
+.grahaksewa-chat-wrapper .btn.btn-sm {
+  font-size: 12px;
+}
+.grahaksewa-chat-wrapper .chatformwrapper #chat-body {
+  height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+}
+.grahaksewa-chat-wrapper .chatformwrapper .card-footer {
+  padding: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+.grahaksewa-chat-wrapper .chatformwrapper .card-footer input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 0;
+  border-width: 0 1px 0 0;
+}
+
+.grahaksewa-chat-wrapper .incoming-msg p,
+.grahaksewa-chat-wrapper .outgoing-msg p {
+  padding: 7px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 80%;
+  font-size: 13px;
+}
+.grahaksewa-chat-wrapper .incoming-msg p label,
+.grahaksewa-chat-wrapper .outgoing-msg p label{
+  margin-bottom: .1rem;
+}
+.grahaksewa-chat-wrapper .incoming-msg {
+  text-align: left;
+}
+.grahaksewa-chat-wrapper .outgoing-msg {
+  text-align: right;
+}
+.grahaksewa-chat-wrapper .outgoing-msg p {
+  color: #757575;
+  background-color: #ebebeb;
+}
+.grahaksewa-chat-wrapper .chat-time {
+  display: block;
+  text-align: right;
+  font-size: 9px;
+  padding-top: 4px;
+}
+
+.grahaksewa-chat-wrapper .incoming-msg .chat-time {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.grahaksewa-chat-wrapper .confidentail-msg {
+  font-size: 12px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.grahaksewa-chat-wrapper .session-info {
+  color: #908e8e;
+  font-size: 11px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+}
+.grahaksewa-chat-wrapper .inapp-message {
+  color: #777575;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .alert-wrapper .alert {
+  font-size: 11px;
+  padding: 5px 40px 5px 10px;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.grahaksewa-chat-wrapper .chat-wrapper .alert-wrapper .alert-light {
+  padding-right: 10px;
+}
+.grahaksewa-chat-wrapper
+  .chat-wrapper
+  .alert-wrapper
+  .alert-dismissible
+  .close {
+  padding: 2px 7px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+}
+.grahaksewa-chat-wrapper .rate-wrapper em {
+  font-size: 12px;
+}
+.grahaksewa-chat-wrapper .rate {
+  /*float: left;*/
+  height: 46px;
+  width: 150px;
+  margin: 0 auto;
+  /*padding: 0 10px;
+  display: inline-block;*/
+}
+.grahaksewa-chat-wrapper .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.grahaksewa-chat-wrapper .rate:not(:checked) > label {
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+  float: right;
+}
+.grahaksewa-chat-wrapper .rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.grahaksewa-chat-wrapper .rate > input:checked ~ label {
+  color: #ffc700;
+}
+.grahaksewa-chat-wrapper .rate:not(:checked) > label:hover,
+.grahaksewa-chat-wrapper .rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.grahaksewa-chat-wrapper .rate > input:checked + label:hover,
+.grahaksewa-chat-wrapper .rate > input:checked + label:hover ~ label,
+.grahaksewa-chat-wrapper .rate > input:checked ~ label:hover,
+.grahaksewa-chat-wrapper .rate > input:checked ~ label:hover ~ label,
+.grahaksewa-chat-wrapper .rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.grahaksewa-chat-wrapper .chat-popup-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 5%;
+  padding: 15px;
+  background: #fff;
+  border-radius: 32px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.grahaksewa-chat-wrapper .btn {
+  color: #fff;
+  background-color: #6d4c41;
+  border-color: #6d4c41;
+}
+.grahaksewa-chat-wrapper .btn.btn-transparent,
+.grahaksewa-chat-wrapper .chat-popup-toggle,
+.grahaksewa-chat-wrapper .file-icon {
+  color: #6d4c41 !important;
+}
+.grahaksewa-chat-wrapper .incoming-msg p {
+  background-color: #6d4c41;
+  color: #fff;
+}
+.grahaksewa-chat-wrapper .btn-outline {
+  color: #6d4c41 !important;
+}
+.grahaksewa-chat-wrapper .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.grahaksewa-chat-wrapper .checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.grahaksewa-chat-wrapper .checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #d4d1d1;
+}
+
+/* On mouse-over, add a grey background color */
+.grahaksewa-chat-wrapper .checkbox-container:hover input ~ .checkmark {
+  background-color: #6d4c41;
+}
+
+/* When the checkbox is checked, add a background */
+.grahaksewa-chat-wrapper .checkbox-container input:checked ~ .checkmark {
+  background-color: #6d4c41;
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.grahaksewa-chat-wrapper .checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.grahaksewa-chat-wrapper .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.grahaksewa-chat-wrapper .checkbox-container .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.grahaksewa-chat-wrapper .chat-red .btn {
+  color: #fff;
+  background-color: #e53935;
+  border-color: #e53935;
+}
+.grahaksewa-chat-wrapper .chat-red .btn.btn-transparent,
+.grahaksewa-chat-wrapper .chat-red .chat-popup-toggle,
+.grahaksewa-chat-wrapper .chat-red .file-icon {
+  color: #e53935 !important;
+}
+.grahaksewa-chat-wrapper .chat-red .incoming-msg p {
+  background-color: #e53935;
+  color: #fff;
+}
+.grahaksewa-chat-wrapper .chat-red .btn-outline {
+  color: #e53935 !important;
+}
+.grahaksewa-chat-wrapper
+  .chat-red
+  .checkbox-container
+  input:checked
+  ~ .checkmark {
+  background-color: #e53935;
+}
+/* On mouse-over, add a grey background color */
+.grahaksewa-chat-wrapper
+  .chat-red
+  .checkbox-container:hover
+  input
+  ~ .checkmark {
+  background-color: #e53935;
+}
+
+.grahaksewa-chat-wrapper .chat-blue .btn {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.grahaksewa-chat-wrapper .chat-blue .btn.btn-transparent,
+.grahaksewa-chat-wrapper .chat-blue .chat-popup-toggle,
+.grahaksewa-chat-wrapper .chat-blue .file-icon {
+  color: #007bff !important;
+}
+.grahaksewa-chat-wrapper .chat-blue .incoming-msg p {
+  background-color: #007bff;
+  color: #fff;
+}
+.grahaksewa-chat-wrapper .chat-blue .btn-outline {
+  color: #007bff !important;
+}
+.grahaksewa-chat-wrapper
+  .chat-blue
+  .checkbox-container
+  input:checked
+  ~ .checkmark {
+  background-color: #007bff;
+}
+/* On mouse-over, add a grey background color */
+.grahaksewa-chat-wrapper
+  .chat-blue
+  .checkbox-container:hover
+  input
+  ~ .checkmark {
+  background-color: #007bff;
+}
+
+.grahaksewa-chat-wrapper .chat-green .btn {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.grahaksewa-chat-wrapper .chat-green .btn.btn-transparent,
+.grahaksewa-chat-wrapper .chat-green .chat-popup-toggle,
+.grahaksewa-chat-wrapper .chat-green .file-icon {
+  color: #28a745 !important;
+}
+.grahaksewa-chat-wrapper .chat-green .incoming-msg p {
+  background-color: #28a745;
+  color: #fff;
+}
+.grahaksewa-chat-wrapper .chat-green .btn-outline {
+  color: #28a745 !important;
+}
+.grahaksewa-chat-wrapper
+  .chat-green
+  .checkbox-container
+  input:checked
+  ~ .checkmark {
+  background-color: #28a745;
+}
+/* On mouse-over, add a grey background color */
+.grahaksewa-chat-wrapper
+  .chat-green
+  .checkbox-container:hover
+  input
+  ~ .checkmark {
+  background-color: #28a745;
+}
+.grahaksewa-chat-wrapper .chat-black .btn {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.grahaksewa-chat-wrapper .chat-black .btn.btn-transparent,
+.grahaksewa-chat-wrapper .chat-black .chat-popup-toggle,
+.grahaksewa-chat-wrapper .chat-black .file-icon {
+  color: #000 !important;
+}
+.grahaksewa-chat-wrapper .chat-black .incoming-msg p {
+  background-color: #000;
+  color: #fff;
+}
+.grahaksewa-chat-wrapper .chat-black .btn-outline {
+  color: #000 !important;
+}
+.grahaksewa-chat-wrapper
+  .chat-black
+  .checkbox-container
+  input:checked
+  ~ .checkmark {
+  background-color: #000;
+}
+/* On mouse-over, add a background color */
+.grahaksewa-chat-wrapper
+  .chat-black
+  .checkbox-container:hover
+  input
+  ~ .checkmark {
+  background-color: #000;
+}
+
+.grahaksewa-chat-wrapper .pull-right {
+  float: right;
+}
+.grahaksewa-chat-wrapper .clickable {
+  cursor: pointer;
+}
+.grahaksewa-chat-wrapper .hide {
+  display: none !important;
+}
+.grahaksewa-chat-wrapper .btn-outline {
+  background-color: white !important;
+}
+.grahaksewa-chat-wrapper .btn:hover {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  color: #fff;
+  outline: none;
+}
+.grahaksewa-chat-wrapper .btn:focus {
+  color: #fff;
+  outline: none;
+}
+.grahaksewa-chat-wrapper input.error {
+  /*border-bottom: 1px solid #b8434e;*/
+}
+.grahaksewa-chat-wrapper .error-field {
+  color: #b8434e;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.grahaksewa-chat-wrapper .typing-indicator {
+  will-change: transform;
+  width: auto;
+  border-radius: 50px;
+  padding: 20px;
+  display: table;
+  margin: 0 0 0 5px;
+  position: absolute;
+  top: -20px;
+  padding: 10px 0px 10px 0px;
+  animation: 2s bulge infinite ease-out;
+  float: left;
+}
+.grahaksewa-chat-wrapper .message-send-footer {
+  position: relative;
+}
+.grahaksewa-chat-wrapper .typing-indicator span {
+  height: 6px;
+  width: 6px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9e9ea1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.grahaksewa-chat-wrapper .typing-indicator span:nth-of-type(1) {
+  animation: 1s blink infinite 0.3333s;
+}
+.grahaksewa-chat-wrapper .typing-indicator span:nth-of-type(2) {
+  animation: 1s blink infinite 0.6666s;
+}
+.grahaksewa-chat-wrapper .typing-indicator span:nth-of-type(3) {
+  animation: 1s blink infinite 0.9999s;
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes bulge {
+  50% {
+    transform: scale(1.05);
+  }
+}
+.grahaksewa-chat-wrapper .form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+.grahaksewa-chat-wrapper .chat-wrapper {
+  opacity: 0;
+}
+.grahaksewa-chat-wrapper .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.grahaksewa-chat-wrapper .chat-wrapper.zoomInUp {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+}
+@-webkit-keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+.grahaksewa-chat-wrapper .chat-wrapper.zoomOutDown {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown;
+}
+.grahaksewa-chat-wrapper .chat-wrapper.zoomOutUp {
+  -webkit-animation-name: zoomOutUp;
+  animation-name: zoomOutUp;
+}
+.grahaksewa-chat-wrapper ::-webkit-scrollbar {
+  width: 7px;
+}
+.grahaksewa-chat-wrapper ::-webkit-scrollbar-track {
+  background: #fff;
+}
+.grahaksewa-chat-wrapper ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.grahaksewa-chat-wrapper ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.grahaksewa-chat-wrapper .two-button-align {
+  width: 49% !important;
+}
+
+.grahaksewa-chat-wrapper .btn-gray {
+  background: #888;
+  border-color: #888;
+}
+
+.grahaksewa-chat-wrapper .btn-white {
+  background: #fff !important;
+}
+.grahaksewa-chat-wrapper .emoji-mart-bar {
+  display: none;
+}
+.grahaksewa-chat-wrapper .emoji-mart {
+  width: 100% !important;
+  height: 300px !important;
+  position: absolute;
+  bottom: 46px;
+  left: 0px;
+}
+
+.grahaksewa-chat-wrapper .figure {
+  margin: 0 0 10px 0;
+  width: 70%;
+  border: thin silver solid;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+
+.grahaksewa-chat-wrapper .figure {
+  display: inline-block;
+  background-color: transparent !important;
+  position: relative;
+}
+.grahaksewa-chat-wrapper .figure .chat-time {
+  color: rgba(0, 0, 0, 0.6);
+}
+.grahaksewa-chat-wrapper img.scaled {
+  width: 100%;
+}
+.grahaksewa-chat-wrapper .figure span {
+  display: block;
+  margin: 10px 0 0 0;
+}
+.grahaksewa-chat-wrapper .figure i {
+  line-height: normal;
+}
+.grahaksewa-chat-wrapper .figure .loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.grahaksewa-chat-wrapper .figure .loader .slider {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  overflow-x: hidden;
+  bottom: 0;
+}
+
+.grahaksewa-chat-wrapper .figure .loader .line {
+  position: absolute;
+  opacity: 0.4;
+  background: #4a8df8;
+  width: 150%;
+  height: 5px;
+  bottom: 0;
+}
+
+.grahaksewa-chat-wrapper .figure .loader .subline {
+  position: absolute;
+  background: #4a8df8;
+  height: 5px;
+  bottom: 0;
+}
+.grahaksewa-chat-wrapper .figure .loader .inc {
+  animation: increase 2s infinite;
+}
+.grahaksewa-chat-wrapper .figure .loader .dec {
+  animation: decrease 2s 0.5s infinite;
+}
+
+@keyframes increase {
+  from {
+    left: -5%;
+    width: 5%;
+  }
+  to {
+    left: 130%;
+    width: 100%;
+  }
+}
+@keyframes decrease {
+  from {
+    left: -80%;
+    width: 80%;
+  }
+  to {
+    left: 110%;
+    width: 10%;
+  }
+}

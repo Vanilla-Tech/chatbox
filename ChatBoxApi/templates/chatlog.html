@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chat Log</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body * {
+      font-size: 16px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <b>Chat Logs: </b>
+      <br />
+      <b>Chat Start Time: {{data.startTime}}</b>
+      <br />
+      <b>Chat End Time: {{data.endTime}}</b>
+      <br />
+      <b>Agent Name: {{data.agentName}}</b>
+      <br />
+      <b>Customer Name: {{data.customerName}}</b>
+      <br />
+      <br />
+      <table width="100%" border="1">
+        <thead>
+          <tr>
+            <th class="text-center" style="padding:10px;">Name</th>
+            <th class="text-center" style="padding:10px;">Date Time</th>
+            <th class="text-center" style="padding:10px;">Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each data.messages}}
+          <tr>
+            {{#ifCond this.isAgent true}}
+            <td style="padding:10px;">{{this.agentName}}</td>
+            {{else}}
+            <td style="padding:10px;">{{this.customerName}}</td>
+            {{/ifCond}}
+            <td style="padding:10px;">{{this.timeStamp}}</td>
+            <td style="padding:10px;">{{this.message}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>      
+    </div>
+  </div>
+</body>
+
+</html>

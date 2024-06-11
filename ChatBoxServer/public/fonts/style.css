@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?v8zus3');
+  src:  url('fonts/icomoon.eot?v8zus3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v8zus3') format('truetype'),
+    url('fonts/icomoon.woff?v8zus3') format('woff'),
+    url('fonts/icomoon.svg?v8zus3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-history:before {
+  content: "\e904";
+}
+.icon-home-delivery:before {
+  content: "\e905";
+}
+.icon-mobile-wallet:before {
+  content: "\e906";
+}
+.icon-new:before {
+  content: "\e907";
+}
+.icon-plus:before {
+  content: "\e908";
+}
+.icon-radio-checked .path1:before {
+  content: "\e909";
+  color: rgb(255, 255, 255);
+}
+.icon-radio-checked .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(35, 35, 35);
+}
+.icon-radio-checked .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(35, 35, 35);
+}
+.icon-radio-unchecked:before {
+  content: "\e90c";
+}
+.icon-receivers:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e90e";
+}
+.icon-send-to:before {
+  content: "\e90f";
+}
+.icon-chevron-down:before {
+  content: "\e910";
+}
+.icon-chevron-l:before {
+  content: "\e911";
+}
+.icon-chevron-right:before {
+  content: "\e912";
+}
+.icon-chevron-up:before {
+  content: "\e913";
+}
+.icon-calender:before {
+  content: "\e914";
+}
+.icon-cash-pickup:before {
+  content: "\e915";
+}
+.icon-contact-book:before {
+  content: "\e916";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-account:before {
+  content: "\e901";
+}
+.icon-exchange:before {
+  content: "\e900";
+}

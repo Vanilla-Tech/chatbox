@@ -1,0 +1,27 @@
+<h5 style="font-size: 10px;">Chat Logs: </h5>
+<p style="font-size: 10px;">Chat start Time : <%= startTime %></p>
+<table width="100%" border="1">
+    <thead>
+        <tr>
+            <th class="text-center" style="padding:10px;font-size: 10px;">Name</th>
+            <th class="text-center" style="padding:10px;font-size: 10px;">Date Time</th>
+            <th class="text-center" style="padding:10px;font-size: 10px;">Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% if (messages.length > 0) { %>
+            <% messages.forEach(message => {%>
+            <tr>
+                    <%if(message.isAgent == true) {%>
+                        <td style="font-size: 10px;"><%= message.agentName %></td>
+                    <% } else{ %>
+                        <td style="font-size: 10px;"><%= message.customerName %></td>
+                    <% }%>
+                <td style="font-size: 10px;"><%= message.timeStamp %></td>
+                <td style="font-size: 10px;"><%= message.message %></td>
+                </tr>
+            <%  });%>
+        <% }%>
+    </tbody>
+</table>
+<p style="font-size: 10px;">Chat end Time : <%= endTime %></p>

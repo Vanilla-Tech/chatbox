@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta charset="utf-8" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="http://localhost:3034/css/main.css" />
+    <title>Live Chat | Client</title>
+  </head>
+
+  <body style="background:#dc3545;">
+    <!-- <div id="UploadBox">
+      <h2>File Uploader</h2>
+      <span id='UploadArea'>
+          <label for="FileBox">Choose A File: </label><input type="file" id="FileBox"><br>
+          <label for="NameBox">Name: </label><input type="text" id="NameBox"><br>
+
+          <button  type='button' id='UploadButton' class='Button'>Upload</button>
+      </span>
+  </div> -->
+    <div id="chat"></div>
+    <script src="http://localhost:3034/livechat.min.js"></script>
+    <script>
+      $("#chat").mtaChat({
+        departmentCode: "GASDGJ",
+        channelCode: "WEB"
+        // ,mobileNumber:"231213213213",email:"test@test.com",name:"sudhir"
+      });
+    </script>
+  </body>
+</html>

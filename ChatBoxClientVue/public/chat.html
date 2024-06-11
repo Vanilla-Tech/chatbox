@@ -1,0 +1,179 @@
+<div class="mm-liveChat">
+    <div class="live-chat">
+        <div class="lc-header" id="lc-header-prechat" style="">
+            <span>Live Chat</span>
+            <a href="JavaScript:Void(0);" class="close-chat">
+                <img src="https://chat.eightsquare.co/images/chat-close.svg">
+            </a>
+        </div>
+        <div class="lc-header" id="lc-header-conversation" style="display:none">
+            <span>Live Chat</span>
+            <a href="JavaScript:Void(0);" class="close-chat">
+                <img src="https://chat.eightsquare.co/images/chat-close.svg">
+            </a>
+        </div>
+        <div class="lc-header" id="lc-header-offline" style="display: none">
+            <span> Leave Offline Message ! </span>
+        </div>
+        <div class="lc-body">
+            <div id="lc_successSend" style="display: none;">
+                <div class="lc-body-inner">
+                    <div class="lc-tm">
+                        <img src="https://chat.eightsquare.co/images/success.svg">
+                        <span>Thank You </span>
+                    </div>
+                </div>
+            </div>
+            <div id="lc_chatOfline" style="display: none;">
+                <form id="ChatForm" validate="true" class="pad-15 imp ChatForm" action="index4.html" novalidate="true"
+                    data-uid="form-0">
+                    <div class="lc-offlineMessage mt0b25" style="color:red">
+                        <span id="lc_offlineMessage">Sorry, the service is currently unavailable. Please leave your
+                            offline message. We will get back to you very soon.</span>
+                    </div>
+                    <div class="lc-body-inner">
+                        <div class="form-group">
+                            <label> Name </label>
+                            <input type="text" name="name1" class="form-control Alphabet" maxlength="40"
+                                pattern="^[a-zA-Z ]{3,40}" data-error="Please enter a valid name"
+                                data-uid="undefined-field-0">
+                        </div>
+                        <div class="form-group">
+                            <label> Mobile Number </label>
+                            <input type="text" name="mobileNumber1" maxlength="12" pattern="[0-9()-+ ]{11,12}"
+                                class="form-control Number"
+                                data-error="Please indicate country code “6” followed by Mobile Number e.g. 6018xxxxxx"
+                                data-uid="undefined-field-1">
+                        </div>
+                        <div class="form-group">
+                            <label class="mandatory"> Email </label>
+                            <input type="text" name="email1" class="form-control" maxlength="50" required="required"
+                                data-error="Please enter a valid email" data-uid="undefined-field-2"
+                                pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$">
+                        </div>
+                        <div class="form-group">
+                            <label class="mandatory"> Message </label>
+                            <textarea type="text" rows="3" maxlength="150" name="offlineMessage"
+                                data-error="Please enter a message" required="" class="h145 form-control"
+                                data-uid="undefined-field-3"></textarea>
+                        </div>
+                        <div class="agree mt0b25">
+                            <span> Your personal data is collected and used for Customer Support purposes only. Full
+                                policy available at
+                                <a href="www.mtradeasia.com/main/privacy-policy" target="_blank">
+                                    www.mtradeasia.com/main/privacy-policy/</a>
+                            </span>
+                            <div class="agree-checkbox">
+                                <input class="styled-checkbox" id="Aggree" data-error="Please agree to continue"
+                                    type="checkbox" required="" value="value1" data-uid="undefined-field-4">
+                                <label for="Aggree">Agree</label>
+                            </div>
+                        </div>
+                        <!--end agree-->
+                    </div>
+                    <input type="submit" class="btn-block btn btn-submit" id="lc_offlineSubmit" name="" value="Submit"
+                        data-uid="form-0-field-5">
+                </form>
+            </div>
+            <div id="lc_chatOnline" style="">
+                <form id="ChatFormOnline" validate="true" name="ChatFormOnline" class="pad-15 imp ChatForm"
+                    novalidate="true" data-uid="form-1">
+                    <div class="lc-body-inner">
+                        <div class="form-group">
+                            <label class="mandatory"> Name </label>
+                            <input type="text" name="name" class="form-control Alphabet" maxlength="40"
+                                pattern="^[a-zA-Z ]{3,40}" data-error="Please enter a valid name" required="required"
+                                data-uid="undefined-field-0">
+                        </div>
+                        <div class="form-group">
+                            <label class="mandatory"> Mobile Number </label>
+                            <input type="text" id="mobileNumber" name="mobileNumber" maxlength="12"
+                                class="form-control Number" pattern="[0-9()-+ ]{11,12}" required="required"
+                                data-error="Please indicate country code “6” followed by Mobile Number e.g. 6018xxxxxx"
+                                data-uid="undefined-field-1">
+                        </div>
+                        <div class="form-group">
+                            <label class="mandatory"> Email </label>
+                            <input type="text" name="email" class="form-control" maxlength="50"
+                                data-error="Please enter a valid email" required="required" data-uid="undefined-field-2"
+                                pattern="^\S+@(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})$">
+                        </div>
+                        <div class="agree">
+                            <span> Your personal data is collected and used for Customer Support purposes only. Full
+                                policy available at
+                                <a href="www.mtradeasia.com/main/privacy-policy" target="_blank">
+                                    www.mtradeasia.com/main/privacy-policy/</a>
+                            </span>
+                            <div class="agree-checkbox">
+                                <input class="styled-checkbox" id="Aggree1" type="checkbox" value="value1"
+                                    data-error="Please agree to continue" required="" data-uid="undefined-field-3">
+                                <label for="Aggree1">Agree</label>
+                            </div>
+                        </div>
+                        <!--end agree-->
+                    </div>
+                    <input type="submit" class="btn-block btn btn-submit" name="" id="lc_onlineSubmit"
+                        value="Start Chat" data-uid="form-1-field-4">
+                </form>
+            </div>
+            <div class="pad-b84" id="lc_conversation" style="display:none">
+                <div class="notic" id="announcementBanner">Please do not share any sensitive information. (i.e. 16
+                    Digits card information)</div>
+                <div class="errorMessage hide"> Error Message goes here.</div>
+                <div class="lc-body-inner" id="lc_conversationDiv">
+                    <!--<div class="chat-starte" id="lc_startChat">Chat Started 5.00 PM on 11/3/2019</div>-->
+                    <!--end message send-->
+                    <div class="typying" id="lc_typing" style="display:none">
+                        <div class="typ-wrap">
+                            <div class="typing_loader"></div>
+                        </div>
+                    </div>
+                    <div class="chat-ended" id="lc_endChat" style="display:none"></div>
+                    <div class="rate-us" id="lc_rateDiv" style="display:none;">
+                        <h3>Rate this chat</h3>
+                        <div class="rating-stars text-center">
+                            <ul id="stars">
+                                <li class="star" title="Poor" data-value="1">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Fair" data-value="2">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Good" data-value="3">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="Excellent" data-value="4">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                                <li class="star" title="WOW!!!" data-value="5">
+                                    <i class="fa fa-star fa-fw"></i>
+                                </li>
+                            </ul>
+                            <a href="JavaScript:void(0);" id="rateIt" class="rate-it btn">Rate</a>
+                        </div>
+                    </div>
+                </div>
+                <!--lc-bod-inner- end -->
+                <div class="chat-input" id="chatInput">
+                    <div class="textarea">
+                        <textarea id="chatTextArea" name="message" placeholder="Type a message here"
+                            class="form-control" rows="1"></textarea>
+                    </div>
+                    <div class="right-area">
+                        <i class="emojipicker far fa-surprise"></i>
+                        <button class="btn-send" id="lc_sendMsgButton">Send</button>
+                    </div>
+                </div>
+            </div>
+            <!--pad-b84-->
+            <!--end Conversation-->
+        </div>
+        <!--end lc-body-->
+    </div>
+    <div class="chat-icon">
+        <div class="chat-badge bounce" id="lc_chatBadge" style="display:none"></div>
+        <a href="JavaScript:void(0);" id="chatIcon" class="active">
+            <img src="https://chat.eightsquare.co/images/chaticon.svg">
+        </a>
+    </div>
+</div>
